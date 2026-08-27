@@ -83,7 +83,7 @@ RUN pacman -Syu --noconfirm
 
 #dms/hyperland setup
 RUN pacman -S --noconfirm \
-    hyperland \
+    hyprland \
     chaotic-aur/bootc \
     chaotic-aur/dms-shell-git chaotic-aur/qt6ct-kde 
 
@@ -101,16 +101,14 @@ RUN echo -e 'enable systemd-resolved.service' > /usr/lib/systemd/system-preset/9
 RUN echo -e 'L /etc/resolv.conf - - - - ../run/systemd/resolve/stub-resolv.conf' > /usr/lib/tmpfiles.d/resolved-default.conf
 RUN systemctl preset systemd-resolved.service
 
-# OS Release and Update uwu
+# OS Releas
 RUN echo -e 'NAME="KistuneLiunx"\n\
 PRETTY_NAME="KistuneLinux (Arch Based)"\n\
 ID=arch\n\
-BUILD_ID=rolling\n\
-ANSI_COLOR="38;2;23;147;209"\n\
 LOGO=archlinux-logo\n\
 DEFAULT_HOSTNAME="devTest"' > /etc/os-release
 
-# System services (Machine Boot level)
+# System services 
 RUN systemctl enable polkit.service \
     NetworkManager.service \
     tuned.service \
@@ -121,9 +119,9 @@ RUN systemctl enable polkit.service \
     xeniaos-group-fix.service \
     cups.socket \
     cups-browsed.service \
-    bluetooth.service
+    bluetooth.servi
 
-# User services (Niri/user session level)
+# User services 
 RUN systemctl --global enable \
     hyprland.service \
     dms.service \

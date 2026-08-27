@@ -4,6 +4,6 @@ This repository is based on Universal Blue & bootc to create a immuatuble linux 
 
 Focused on container based security without lose of modern Linux compatibility. Through the use of docker and gui tools for ease of use.
 
-Large amounts of commits are due to bluebuild-cli having issues
+Special thanks to the documentation by ZirconiumOS, XeniaOS, bootcrew, uBlue, & bootc.
 
 NO AI USED | Please do not fork if you intend to change this.
