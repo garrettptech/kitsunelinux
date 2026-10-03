@@ -1,5 +1,5 @@
 image_name := env("BUILD_IMAGE_NAME", "kitsunelinux")
-image_tag := env("BUILD_IMAGE_TAG", "v0.1rc")
+image_tag := env("BUILD_IMAGE_TAG", "v0.1rc1")
 base_dir := env("BUILD_BASE_DIR", ".")
 filesystem := env("BUILD_FILESYSTEM", "btrfs")
 

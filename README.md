@@ -2,7 +2,7 @@
 
 This repository is based on Universal Blue & bootc to create a immuatuble linux distro for my personal usage.
 
-Focused on container based security without lose of modern Linux compatibility. Through the use of docker and gui tools for ease of use.
+Focused on container based security without lose of modern Linux compatibility. Through the use of podman and gui tools for ease of use.
 
 Special thanks to the documentation by ZirconiumOS, XeniaOS, bootcrew, uBlue, & bootc.
 
